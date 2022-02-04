@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62,5%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+h1{
+    text-align: center;
+}
+
+h1::after{
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+}
+
+.show{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+    place-items: end center;
+    position: relative;
+    top: 50px;
+    /* height: 100vh;
+    width: 100vw;   */
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.title::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+}
+
+.text{
+    text-align: center;
+    word-break: break-word;
+    display: table;
+}
+
+.content{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px; 
+}
+
+.buttons{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    right: 60px;
+}
+
+.update-btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px; 
+    text-decoration: none;
+    transition: ease-out 0.3s;
+    background-color: #F5F5F5;
+    color: black;   
+}
+
+.update-btn:hover{
+    border-radius: 15px;
+    box-shadow: inset 80px 0 0 0 #4FBDBA;
+    
+}
+
+.delete-btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    transition: ease-out 0.3s;
+    background-color: #F5F5F5;
+    color: black;
+}
+
+.delete-btn:hover{
+    border-radius: 15px;
+    box-shadow: inset 70px 0 0 0 #DA1212;
+    color: black;
+}
+
+.add-btn{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    left: 35px;
+    transition: ease-out 0.3s;
+    color: black;
+}
+
+.add-btn:hover{
+    border-radius: 15px;
+    box-shadow: inset 135px 0 0 0 #4FBDBA;
+}
+
+@media only screen and (max-width: 1024px){
+    .show{
+        display: block;
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    .buttons{
+        position: relative;
+        right: 175px;
+        margin: 15px;
+    }
+
+    .add-btn{
+        position: relative;
+        top: 20px;
+    }
+
+}
